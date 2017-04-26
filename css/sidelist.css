@@ -5,29 +5,29 @@
 #sidebar h3{ width:101px;}
 .sidelist{position:relative;z-index:1;height:32px;width:106px; margin-bottom:9px;}
 .sidelist span h3{width:101px;height:32px;margin-left:5px;position:relative;z-index:2;font-size:12px;}
-.sidelist span h3:hover{background:url(../img/pic2/bg_menu_h3.png) no-repeat;}
-.sidelist span h3.bg_h3{background:url(../img/pic2/bg_menu_h3.png) no-repeat;}
+.sidelist span h3:hover{background:url(../img/pic5/bg_menu_h3.png) no-repeat;}
+.sidelist span h3.bg_h3{background:url(../img/pic5/bg_menu_h3.png) no-repeat;}
 .sidelist span h3 a span{ }
 .sidelist span h3 a{ width:68px; height:32px; line-height:32px; display:block;text-decoration:none;color:#fff; font-family:"宋体"; font-weight:bold; padding-left:33px;}
 .sidelist span h3 a:hover{ color:#272217;}
-.sidelist span h3 a.style_1{ background:url(../img/pic2/meun_pic.png) 0 -203px no-repeat;}
-.sidelist span h3 a.style_8{ background:url(../img/pic2/meun_pic.png) 0 -121px no-repeat;}
-.sidelist span h3 a.style_13{ background:url(../img/pic2/meun_pic.png) 0 -79px no-repeat;}
-.sidelist span h3 a.style_16{ background:url(../img/pic2/meun_pic.png) 0 -162px no-repeat;}
-.sidelist span h3 a.style_49{ background:url(../img/pic2/meun_pic.png) 0 -245px no-repeat;}
-.sidelist span h3 a.style_370{  background:url(../img/pic2/meun_pic.png) 0 6px no-repeat;}
-.sidelist span h3 a.style_376{ background:url(../img/pic2/meun_pic.png) 0 -36px no-repeat;}
-.sidelist span h3 a.style_470{ background:url(../img/pic2/meun_pic.png) 0 -291px no-repeat;}
+.sidelist span h3 .style_1{ background:url(../img/pic5/meun_pic.png) 0 -203px no-repeat;}
+.sidelist span h3 .style_8{ background:url(../img/pic5/meun_pic.png) 0 -121px no-repeat;}
+.sidelist span h3 .style_13{ background:url(../img/pic5/meun_pic.png) 0 -79px no-repeat;}
+.sidelist span h3 .style_16{ background:url(../img/pic5/meun_pic.png) 0 -162px no-repeat;}
+.sidelist span h3 .style_49{ background:url(../img/pic5/meun_pic.png) 0 -245px no-repeat;}
+.sidelist span h3 .style_370{  background:url(../img/pic5/meun_pic.png) 0 6px no-repeat;}
+.sidelist span h3 .style_376{ background:url(../img/pic5/meun_pic.png) 0 -36px no-repeat;}
+.sidelist span h3 .style_470{ background:url(../img/pic5/meun_pic.png) 0 -291px no-repeat;}
 
 .sidelist .hover a{ width:68px; height:32px; line-height:32px; font-weight:bold; color:#272217;}
-.sidelist span h3.hover a.style_1{ background:url(../img/pic2/meun_pic.png) 0 -548px no-repeat;}
-.sidelist span h3.hover a.style_8{ background:url(../img/pic2/meun_pic.png) 0 -466px no-repeat;}
-.sidelist span h3.hover a.style_13{ background:url(../img/pic2/meun_pic.png) 0 -424px no-repeat;}
-.sidelist span h3.hover a.style_16{ background:url(../img/pic2/meun_pic.png) 0 -507px no-repeat;}
-.sidelist span h3.hover a.style_49{ background:url(../img/pic2/meun_pic.png) 0 -591px no-repeat;}
-.sidelist span h3.hover a.style_370{ background:url(../img/pic2/meun_pic.png) 0 -339px no-repeat;}
-.sidelist span h3.hover a.style_376{ background:url(../img/pic2/meun_pic.png) 0 -381px no-repeat;}
-.sidelist span h3.hover a.style_470{ background:url(../img/pic2/meun_pic.png) 0 -636px no-repeat;}
+.sidelist span h3.hover .style_1{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -548px ;}
+.sidelist span h3.hover .style_8{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -466px ;}
+.sidelist span h3.hover .style_13{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -424px ;}
+.sidelist span h3.hover .style_16{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -507px ;}
+.sidelist span h3.hover .style_49{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -591px ;}
+.sidelist span h3.hover .style_370{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -339px ;}
+.sidelist span h3.hover .style_376{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -381px ;}
+.sidelist span h3.hover .style_470{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -636px ;}
 
 /* .i-list{display:block;position:absolute;z-index:1;left:106px;top:-8px;width:466px;height:auto;padding:13px;background:#d1c5c0;}  绝对定位样式
 *html .i-list{display:none;position:absolute;z-index:1;left:50%; margin-left:53px;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-document.documentElement.offsetHeight)-60+"px")}

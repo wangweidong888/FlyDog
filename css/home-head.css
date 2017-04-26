@@ -1,0 +1,210 @@
+/*header-left*/
+.head-banner{
+	width: 100%;
+    height: 76px;
+    margin: 0px auto;
+    background: url(../img/pic5/head_bannerbg.png) center bottom no-repeat;
+}
+.header-left{
+	width: 494px;
+	height: 73px;	
+}
+.herader-center{
+	width: 410px;
+	float: left;
+}
+.fl{
+	float: left;
+	display: inline;
+}
+/*联系店长*/
+.header-call p{
+	color: #3f3f3f;
+    height: 25px;
+    font-family: "宋体";
+    font-size: 12px;
+    padding-top: 7px;
+    line-height: 23px;
+}
+.header-call p span{
+	float: left;
+}
+.header-call p a{
+	float: left;
+}
+.header-call h3{
+	color: #010101;
+	font-weight: normal;
+	font-size: 17px;
+	font-family: "微软雅黑";
+	height: 29px;
+	line-height: 29px;
+	padding: 5px 0 0 6px;
+}
+.call_dianzhang{
+	width: 61px;
+    height: 21px;
+    display: inline-block;
+    background: url(../img/dzrb_cat.png) -69px 0px no-repeat;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+/*logo*/
+.logoimg img{
+	border: 0;
+	width: 76px;
+	height: 70px;
+	margin-left: -2px;
+}
+.logoimg{
+	float: left;
+	width: 77px;
+	height: 69px;
+}
+/*header-right*/
+.header-right{
+	width: 705px;
+	height: 73px;
+}
+.header-right .topmenu{
+	width: 100%;
+	height: 30px;
+	padding-top: 8px;
+}
+.header-right .topmenu .btn{
+	float: right;
+	width: 110px;
+	height: 26px;
+	padding-left: 25px;
+}
+/*登陆*/
+.denglu{
+	width: 49px;
+	float: left;
+	height: 22px;
+	background: url(../img/comment.gif) -1px -27px no-repeat;
+	border: 0;
+	margin-right: 5px;
+	cursor: pointer;
+}
+/*注册*/
+.zhuce{
+	width: 49px;
+	float: right;
+	height: 22px;
+	background: url(../img/comment.gif) -51px -27px no-repeat;
+	border: 0;
+	margin-right: 7px;
+	cursor: pointer;
+}
+/*右上导航*/
+.header-right .topmenu{
+	width: 100%;
+	height: 30px;
+}
+.header-right .topmenu .header-menu{
+	color: #296c12;
+	width: 397px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;
+	float: right;
+	padding-left: 159px;
+}
+.header-right .topmenu .header-menu a{
+	color: #296c12;
+}
+.header-right .topmenu .header-menu .cat{
+	background: url(../img/dzrb_comment.gif) 0px 0px no-repeat;
+	padding-left: 18px;
+}
+/*搜索*/
+.botmenu{
+	width: 100%;
+	height: 25px;
+	float: left;
+	margin-top: 10px;
+}
+.botmenu .botmenu-left{
+	float: left;
+	width: 251px;
+	height: 25px;
+}
+.botmenu .botmenu-center{
+	float: left;
+	width: 449px;
+	height: 25px;
+	padding-top: 3px;
+}
+.botmenu .botmenu-center p{
+	padding: 2px 5px 0 23px;
+}
+.botmenu .botmenu-center p a{
+	width: 36px;
+	height: 18px;
+	display: inline-block;
+}
+.botmenu .botmenu-center p a img{
+	width: 36px;
+	height: 18px;
+}
+.botmenu .botmenu-center h3{
+	font-size: 12px;
+	font-weight: normal;
+	padding: 2px 12px 0 5px;
+}
+.botmenu .botmenu-center h3 img{
+	width: 3px;
+	height: 18px;
+}
+.botmenu .botmenu-center h4{
+	font-size: 12px;
+	font-weight: normal;
+	padding-top: 2px;
+}
+.botmenu .botmenu-center h4 a{
+	width: 58px;
+	height: 18px;
+	display: inline-block;
+}
+.botmenu .botmenu-center h4 a img{
+	width: 58px;
+	height: 18px;
+}
+.botmenu .botmenu-center h5{
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 18px;
+}
+.botmenu .botmenu-center .sousuo_text{ 
+	width:104px; 
+	height:18px; 
+	line-height:18px; 
+	background:url(../img/comment.gif) -137px -107px no-repeat; 
+	border:0px; 
+	color:#bbb; 
+	margin-top:2px; 
+	float:left; 
+	padding-left:20px; 
+	margin-left:10px;
+	}
+.botmenu .botmenu-center .sousuo_text{
+	background: url(../img/dzrb_comment.gif) -66px 0 no-repeat;
+	width: 101px;
+}
+.botmenu .botmenu-center .sousuo_but{
+	background: url(../img/dzrb_comment.gif) -186px -1px no-repeat;
+	}
+.botmenu .botmenu-center .sousuo_but{
+	float: left;
+	width: 49px;
+	height: 18px;
+	border: 0;
+	margin-top:3px ;
+	cursor: pointer;
+}
+.botmenu .botmenu-right{
+    float: left;
+    width: 5px;
+    height: 25px;
+}

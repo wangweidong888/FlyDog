@@ -18,7 +18,7 @@ body {
     margin: 0px auto;
     background: url(../img/dzrb_bg.jpg) center top no-repeat rgb(94, 149, 46);
 }
-a { color:#666; text-decoration:none; }
+a {color: #666;text-decoration: none; }
 
 
 
@@ -33,13 +33,54 @@ a { color:#666; text-decoration:none; }
 	height: 73px;
 }
 .store{
-	background-color: gold;
-	height: 2008px;
+	height: 1872px;
 }
 .footer{
 	width: 100%;
+	height: 244px;
     margin: 0px auto;
     margin-top: 7px;
     padding-bottom: 40px;
-    background-color: red;
 }
+.questionnaire{
+	width: 43px;
+    height: 111px;
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+.questionnaire a{
+	display: block;
+    width: 15px;
+    height: 61px;
+    line-height: 14px;
+    padding: 50px 14px 0 14px;
+    background: url(../img/pic5/bg_wenjuan.png) no-repeat;
+    text-align: center;
+    color: #9e766d;
+}
+.questionnaire a:hover{
+	background: url(../img/pic5/bg_wenjuan_hover.png) no-repeat;
+}
+.consultation{
+	position: fixed;
+    top: 150px;
+    right: 0;
+    width: 41px;
+    height: 119px;
+}
+.consultation a {
+	width: 41px;
+    height: 119px;
+    display: inline-block;
+    background: url(../img/pic5/dzrb_zxzx.png) no-repeat;
+    }
+.wrap-f{
+	width: 1200px;
+	height: 127px;
+	margin: auto;
+	background: url(../img/pic5/dibuline.gif) repeat-x;
+}
+

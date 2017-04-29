@@ -20,19 +20,20 @@
 .sidelist span h3 .style_470{ background:url(../img/pic5/meun_pic.png) 0 -291px no-repeat;}
 
 .sidelist .hover a{ width:68px; height:32px; line-height:32px; font-weight:bold; color:#272217;}
-.sidelist span h3.hover .style_1{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -548px ;}
-.sidelist span h3.hover .style_8{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -466px ;}
-.sidelist span h3.hover .style_13{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -424px ;}
-.sidelist span h3.hover .style_16{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -507px ;}
-.sidelist span h3.hover .style_49{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -591px ;}
-.sidelist span h3.hover .style_370{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -339px ;}
-.sidelist span h3.hover .style_376{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -381px ;}
-.sidelist span h3.hover .style_470{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -636px ;}
+
+.style_1a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -548px ;}
+.style_8a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -466px ;}
+.style_13a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -424px ;}
+.style_16a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -507px ;}
+.style_49a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -591px ;}
+.style_370a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -339px ;}
+.style_376a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -381px ;}
+.style_470a{ background:url(../img/pic5/meun_pic.png) no-repeat 0 -636px ;}
 
 /* .i-list{display:block;position:absolute;z-index:1;left:106px;top:-8px;width:466px;height:auto;padding:13px;background:#d1c5c0;}  绝对定位样式
 *html .i-list{display:none;position:absolute;z-index:1;left:50%; margin-left:53px;top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-document.documentElement.offsetHeight)-60+"px")}
 */
-.i-list{display:none;position: fixed;z-index:1;left:50%;top:76px;margin-left:-494px;width:440px;height:314px;_height:auto;padding:13px 6px 13px 20px;background:#d1c5c0;}
+.i-list{display:none;position: fixed;z-index:1;left:50%;top:76px;margin-left:-494px;width:440px;height:546px;_height:auto;padding:13px 6px 13px 20px;background:#d1c5c0;}
 *html .i-list{display:none;position:absolute;z-index:1;left:50%; margin-left:53px;top:-9px;}
 .i-list div{width:220px;float:left; display:inline;}
 .i-list h2{ width:195px; height:30px;line-height:23px;font-size:12px; font-family:"宋体"; color:#9a3d1a; font-weight:normal; border-bottom:1px solid #ba9e96; position:relative;}

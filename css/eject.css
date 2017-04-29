@@ -17,14 +17,14 @@
 .menu_pop .nav_type{background:url(../img/pic2/dzrb_menu_pop.png) no-repeat;}
 .sidelist .hover a{ width:68px; height:32px; line-height:32px; font-weight:bold; color:#272217;}
 
-.sidelist span h3.hover .style_1{ background:url(../img/pic2/meun_pic.png) 0 -548px no-repeat;}
-.sidelist span h3.hover .style_8{ background:url(../img/pic2/meun_pic.png) 0 -466px no-repeat;}
-.sidelist span h3.hover .style_13{ background:url(../img/pic2/meun_pic.png) 0 -424px no-repeat;}
-.sidelist span h3.hover .style_16{ background:url(../img/pic2/meun_pic.png) 0 -507px no-repeat;}
-.sidelist span h3.hover .style_49{ background:url(../img/pic2/meun_pic.png) 0 -591px no-repeat;}
-.sidelist span h3.hover .style_370{ background:url(../img/pic2/meun_pic.png) 0 -339px no-repeat;}
-.sidelist span h3.hover .style_376{ background:url(../img/pic2/meun_pic.png) 0 -381px no-repeat;}
-.sidelist span h3.hover .style_470{ background:url(../img/pic2/meun_pic.png) 0 -636px no-repeat;}
+.sidelist span h3.hover a.style_1{ background:url(../img/pic2/meun_pic.png) 0 -548px no-repeat;}
+.sidelist span h3.hover a.style_8{ background:url(../img/pic2/meun_pic.png) 0 -466px no-repeat;}
+.sidelist span h3.hover a.style_13{ background:url(../img/pic2/meun_pic.png) 0 -424px no-repeat;}
+.sidelist span h3.hover a.style_16{ background:url(../img/pic2/meun_pic.png) 0 -507px no-repeat;}
+.sidelist span h3.hover a.style_49{ background:url(../img/pic2/meun_pic.png) 0 -591px no-repeat;}
+.sidelist span h3.hover a.style_370{ background:url(../img/pic2/meun_pic.png) 0 -339px no-repeat;}
+.sidelist span h3.hover a.style_376{ background:url(../img/pic2/meun_pic.png) 0 -381px no-repeat;}
+.sidelist span h3.hover a.style_470{ background:url(../img/pic2/meun_pic.png) 0 -636px no-repeat;}
 
 .i-list ul li a:hover{color:#296c12;}
 .i-list h2 a,.i-list h2 a:hover{color:#086506;}

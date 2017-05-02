@@ -1,0 +1,76 @@
+.banner_list{
+	width: 1200px;
+	height: 340px;
+	position: relative;
+	top: 3px;
+}
+.store_top{
+	width: auto;
+	position: relative;
+}
+.banner_list div{
+	width: 1200px;
+	height: 340px;
+	position: absolute;
+	display: none;
+	cursor: pointer;
+}
+.banner_list{
+	background:url(../../img/pic5/dzrb_min_bg.png) center top repeat-y;
+	}
+.menu_hd1 .own, .menu_hd2 .off2, .menu_hd3 .onn3 {
+    background: url(../../img/pic5/dzrb_comment.gif) 0px -86px no-repeat;
+    width: 95px;
+}
+.banner_list ul li.off{
+	width: 20px;
+    height: 20px;
+    float: left;
+    display: block;
+    color: #1e801c;
+    background: url(../../img/pic5/cat.png) -24px -1px no-repeat;
+    cursor: pointer;
+    margin-right: 9px;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    text-align: center;
+}
+
+.banner_list ul li.on{
+	width: 20px;
+    height: 20px;
+    float: left;
+    display: block;
+    color: #1e801c;
+	background:url(../../img/pic5/dzrb_cat.png) 0px 0px no-repeat;
+	cursor: pointer;
+    margin-right: 9px;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    text-align: center;
+	}
+.banner_list ul{
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	z-index: 99999;
+}
+.close_btn{
+	position: absolute;
+    width: 18px;
+    height: auto;
+    top: -21px;
+    left: 51%;
+    margin-left: 597px;
+    z-index: 1003;
+}
+.replay{
+	width: 18px;
+    height: 200px;
+    background: url(../../img/pic5/layout.png) -199px -565px no-repeat;
+}
+.close{
+	width: 18px;
+    height: 247px;
+    background: url(../../img/pic5/layout.png) -179px -565px no-repeat;
+}

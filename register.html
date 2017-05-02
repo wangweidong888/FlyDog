@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 		<title>会员注册-天狗网上商城tiangou.360zan.cn</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
-		<link rel="stylesheet"  type="text/css" href="css/regitster.css">
-		<link rel="stylesheet"  type="text/css" href="css/home-footer.css">
+		<link rel="stylesheet"  type="text/css" href="css/regitster/regitster.css">
+		<link rel="stylesheet"  type="text/css" href="css/regitster/reg.css">
 		<script type="text/javascript" src="js/JQ.js"></script>
 	</head>
 	<body>
@@ -14,7 +14,7 @@
 			<div class="head_wrap">
 				<div class="top_left fl">
 					<ul class="logo">
-						<a href="tiangou.360zan.cn">
+						<a href="home.html">
 							<img src="img/zc/logo_02.png"/>
 						</a>
 					</ul>
@@ -48,17 +48,227 @@
 						<ul class="serchmuen_center">
 							<p class="fl">
 								<a href="#">
-									<img src=""/>
+									<img src="img/zc/shouye.png" width="36px" height="18px"/>
 								</a>
 							</p>
-							<h3 class="fl"></h3>
-							<h4 class="fl"></h4>
-							<form action="javascript:;"></form>
+							<h3 class="fl">
+								<img src="img/zc/line_muen.png" width="3px" height="18px"/>
+							</h3>
+							<h4 class="fl">
+								<a href="#">
+									<img src="img/zc/newp.png" width="58px" height="18px"/>
+								</a>
+							</h4>
+							<form action="javascript:;" id="searchKeyWordForm">
+								<h5 class="fl">
+									<input type="text" id="wareKeyWord" value class="sousuo_text" placeholder="平板电脑"/>
+									<input type="hidden" name="wareKeyWord" id="keyWord" value="%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%84%91">
+									<input name type="submit" value class="sousuo_but"/>
+								</h5>
+							</form>
 						</ul>
 						<ul class="serchmuen_right"></ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		
+		<form action="javascript:;" method="post">
+			<div class="denglu_box" style="height: 600px;">
+				<div class="denglu_box_a">注册会员REGISTRATION</div>
+				<div class="denglu_box_b">
+					<ul class="denglu_box_bleft fl">
+						<li>
+							<span class="zc_yhm" style="text-align: right;">用 户 名：</span>
+							<input id="user" name="member.memberUsername" " type="text" class="i_text">
+							<span class="zc_ts" id="n"><font color="ff9900">* 字母开头,可含数字,5-15个字符</font></span>
+						</li>
+						<li>
+							<span class="zc_yhm" style="text-align: right;">设置密码：</span>
+							<input id="user" name="member.memberUsername" " type="text" class="i_text">
+							<span class="zc_ts" id="n">* 字母开头6-16字符, 可包含特殊符号</span>
+						</li>
+						<li>
+							<span class="zc_yhm" style="text-align: right;">确认密码：</span>
+							<input id="user" name="member.memberUsername" " type="text" class="i_text">
+							<span class="zc_ts" id="n">* 再次输入密码</span>
+						</li>
+						<li>
+							<span class="zc_yhm" style="text-align: right;">邮　　箱：</span>
+							<input id="user" name="member.memberUsername" " type="text" class="i_text">
+							<span class="zc_ts" id="n">*E-Mail可用于接收账户信息及密码找回等</span>
+						</li>
+						<li>
+							<span class="zc_yhm" style="text-align: right;">验 证 码：</span>
+							<span>
+								<input name="captcha" size="30" id="captcha" type="text" class="w_text">
+							</span>
+							<span id="o" style="padding-left: 7px; padding-top: 2px;"></span>
+							<span class="zc_ts kbq">
+								看不清，
+								<a href="#">换一张</a>
+							</span>
+						</li>
+						<li>
+						<p class="fwtk">
+							<input name="" type="checkbox" id="agrrement" value="">
+							我已阅读并同意相关服务条款
+						</p>
+						<p class="fwtk">
+							<input name type="button" class="tzyz_but">
+						</p>
+						</li>
+					</ul>
+					<ul class="denglu_box_bright fl">
+						<h3>我已经是咱网商城（天狗）会员</h3>
+						<p><input name="" type="button" class="tzyz_but" value="" style="width:135px; height:35px; background:url(img/zc/orderbg.gif) -758px -350px no-repeat; cursor: pointer; border:0px;" "></p>
+					</ul>
+				</div>
+				
+				<div class="xy" style="line-height:18px;">
+					<h3>用户协议</h3>
+					<span style="padding-left:27px;"></span>以下详述咱网为您提供服务的条款。本协议详述您在使用我们的服务所须遵守的条款和条件。如您有任何疑问，请及时联系我们。
+					您注册成为咱网电子商务用户（以下简称：本网站用户）前，必须仔细阅读本用户协议和隐私声明，一旦您注册成为了本网站用户即表示您已经阅读、同意并接受本用户协议和隐私声明中所含的所有条款和条件。如果我们对本声明进行了任何变更，我们会在咱网（以下简称：本网站）页面上发布有关变更事项的通知，所有协议内容在发布之日后自动生效。如您有任何疑问，请先联系客服，必要时申请注销您的会员名。<br>
+				<b>一、本网站服务条款的确认和接纳站拥有</b><br>
+					<span style="padding-left:27px;"></span>本网站各项服务的所有权和运作权归本网<br>
+					<b>二、用户注册</b><br>
+					<b>(1)</b>用户资格<br>
+					<span style="padding-left:27px;"></span>本网站用户必须是适用法律下能够签订具有法律约束力的合同的自然人。在不限制上述规定的前提下，我们的服务不向18周岁以下或被临时/无限期中止的本网站用户提供。请您仔细阅读用户协议后注册，并妥善保管好您的咱网电子商务帐户（以下简称：本网站帐户），不得向其他方转让或出售。另外，本网站保留根据其意愿中止或终止您的本网站帐户的权利。<br>
+					<b>(2)</b>资料填写<br>
+					<span style="padding-left:27px;"></span>会员的帐号、密码和安全性。请你一旦注册成功成为会员，你将得到一个密码和帐号。如果你不保管好自己的帐号和密码安全，将负全部责任。另外，每个会员都要对其帐户中的所有活动和事件负全责。你可随时根据指示改变你的密码，也可以结束旧的帐户重开一个新帐户。会员同意若发现任何非法使用会员帐号或安全漏洞的情况，请立即通告咱网。<br>
+					<b>三、隐私政策</b><br>
+					<span style="padding-left:27px;"></span>本网站设有适用于所有用户并纳入用户协议的隐私声明。您应当在注册时阅读并接受隐私声明以使用本网站，且您在作为本网站用户期间将继续受其规定（及本网站对隐私声明作出的任何修订）的约束。<br>
+					<span style="padding-left:27px;"></span>个人数据资料。包括个人识别资料：如姓名、性别、年龄、出生日期、身份证号码(或护照号码)、电话、通信地址、住址、电子邮件地址等情况；个人背景：职业、教育程度、收入状况、婚姻、家庭状况。在未经您同意及确认之前，本网站承诺不会将您的资料用于其它目的。<br>
+					<span style="padding-left:27px;"></span>使用非个人信息。本网站将通过您的IP地址来收集非个人化的信息，包括您的浏览器性质、操作系统种类、给您提供接入服务的ISP的域名等，以优化在您计算机屏幕上显示的页面。通过收集上述信息，我们亦进行客流量统计，从而改进网站的管理和服务。 <br>
+					<span style="padding-left:27px;"></span>个人数据安全。本网站采用安全性的服务器使用控制设备保护您的个人数据。<br>
+					<span style="padding-left:27px;"></span>个人数据披露和限制利用。当国家机构依照法定程序要求本网站披露个人资料时，本网站将根据执法单位的要求或为公共安全目的提供个人资料。在此情况下披露的任何内容，本网站不承担任何责任。本网站在符合下列条件时，对个人资料进行必要范围以外利用：已取得您的书面同意；为免除您在生命、身体或财产方面之急迫危险；为防止他人权益之重大危害；为增进公共利益，且无害于您的重大利益。<br>
+					<b>四、交易及留言管理</b><br>
+					<span style="padding-left:27px;"></span>用户在本网站进行物品购买和留言时必须遵守以下条款
+					您在本网站的一切操作应遵守所有适用的中国法律、法规、条例和地方性法律要求。同时您必须确保遵守本用户协议和隐私声明以及纳入上述文件的所有其它条款、规则等一切相关内容。如您在本网站购买商品，您有义务完成与本网站的购买交易（法律或本用户协议禁止的交易除外）。购买操作执行并下订单后，即表示您同意该商品描述所含的一切出售条件，（商品出售条件不违反本协议并合法）。本网站上的广告，价目表和声明并不构成要约。在本网站接受您的订单之前，您和本网站之间不存在合同关系。本网站有权在发现显现的产品及订单的明显错误或缺货的情况下，单方面撤回该信息或终止交易。本网站保留对产品订购的数量的限制权。在下订单的同时，即表示您默认了已经达到购买这些产品的法定年龄，并将对您在订单中提供的所有信息的真实性负责。 产品价格和可获性都在网站上指明。这类信息将随时更改且不发任何通知。每一项显示的价格都包含了增值税（按照中国的标准税率）。送货费将另外结算，费用根据您选择的送货方式的不同另行计算。在确认了您的订单后发生的意外情况，比如由于供应商提价、税额变化引起的价格变化、或是由于网站的错误等造成价格变化，本网站会通过email或电话通知您，让您决定是否取消订单。拒绝提供担保:会员明确同意信息服务的使用由会员个人承担风险。 咱网不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保，但会在能力范围内，避免出错。 <br>
+				<span style="padding-left:27px;"></span>用户不能在本网站上使用谩骂，侮辱，诽谤等不雅言语以及其它攻击其他用户和网站的言语。咱网有权删除此类留言及其它咱网认为不合适的留言。<br>
+					<span style="font-size:12px; font-weight:bold; ">五、物品质量与售后服务</span><br>
+				<b>(1)</b>详见退换货政策<br>
+					<span style="padding-left:27px;"></span>物品的质量，有国家标准或专业标准的，按国家标准或专业标准执行；无前述标准的，按生产厂商的企业标准执行；无生产厂商企业标准的，由用户与本网站协商确定。如果商品质量不符合标准，用户可以要求换货或退货。<br>
+					<span style="font-size:12px; font-weight:bold; ">六、网站安全</span><br>
+					<span style="padding-left:27px;"></span>您同意，未经本网站明示书面准许，您不会为了任何目的使用任何机器人、蜘蛛软件、刷屏软件或其他自动方式进入网站。此外，您同意绝不进行以下操作：<br>
+					<span style="padding-left:27px;"></span>进行任何对本网站造成或可能造成（按本网站自行酌情确定）不合理或不合比例的重大负荷的行为；<br>
+					<span style="padding-left:27px;"></span>未经本网站事先明示书面准许，对本网站的任何内容（除您的个人信息以外）制作拷贝、进行复制、修改、制作衍生作品、分发或公开展示等的侵权行为； 干扰或试图干扰本网站的正常工作或活动；<br>
+					<span style="padding-left:27px;"></span>在本网站中使用可能视为被禁止或可能被禁止的任何内容； <br>
+					<span style="padding-left:27px;"></span>对本网站使用不良数据。包含可能破坏、改变、删除、不利影响、秘密截取、未经授权而接触，或征用任何系统、数据、个人资料的病毒、特洛依木马、蠕虫、定时炸弹、删除蝇、复活节彩蛋、间谍软件、其他电脑程序等。<br>
+					<span style="font-size:12px; font-weight:bold; ">七、知识产权声明</span><br>
+					<span style="padding-left:27px;"></span>本网站用户同意接收来自咱网或者咱网合作伙伴发出的信息，包括但不限于电子邮件，手机短消息。<br>
+					<span style="padding-left:27px;"></span>咱网有义务在技术上确保网站的正常运行，尽力避免服务中断或将中断时间限制在最短时间内，保证用户网上交易活动的顺利进行。但如因不可抗力或其他本网站无法控制的因素使网站崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，本网站不承担责任；任何用户向本网站提供错误、不完整、不实信息等造成不能正常使用本网站服务或遭受任何其他损失，概与本网站无关。<br>
+					<span style="font-size:12px; font-weight:bold; ">八、免责声明</span><br>
+					<span style="padding-left:27px;"></span>如因不可抗力或其它本站无法控制的原因使本站销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等本站会尽可能合理地协助处理善后事宜，并尽最大努力使客户免受损失。<br>
+					<span style="font-size:12px; font-weight:bold; ">九、服务终止</span><br>
+					<span style="padding-left:27px;"></span>会员或咱网可随时根据实际情况中断一项或多项服务。咱网不需对任何个人或第三方负责而随时中断服务。会员若反对任何服务条款的建议或对后来的条款修改有异议，或对咱网服务不满，会员可以行使如下权利： 不再使用咱网信息服务。<br><span style="padding-left:27px;"></span>通知咱网停止对该会员的服务。<br>
+					<span style="padding-left:27px;"></span>结束会员服务后，会员使用咱网服务的权利马上中止。从那时起，会员没有权利，咱网也没有义务传送任何未处理的信息或未完成的服务给会员或第三方。<br>
+					  <span style="font-size:12px; font-weight:bold; ">有以下行为的会员将被取消会员资格</span><br>
+					  <span style="padding-left:27px;"></span>违反注册条款<br>
+					   <span style="padding-left:27px;"></span>提供虚假个人资料 <br>
+					  <span style="padding-left:27px;"></span>会员有损公司利益的行为 <br>
+					  <span style="padding-left:27px;"></span>违反中国的法律、法规、违反互联网相关规定的行为 <br>
+					 <span style="padding-left:27px;"></span>将会员帐号用于出售、拍卖等，拿会员帐号当作商品进行交易的行为 <br>
+					   <span style="padding-left:27px;"></span>出借、转让 会员帐号给其他会员等不恰当行使会员权利的行为 <br>
+					  <span style="padding-left:27px;"></span>通过盗取密码、诈骗等不正当手段获得会员帐号的行为<br>
+					  <span style="padding-left:27px;"></span>在商品留言，blog中多次或大量使用谩骂，侮辱，诽谤等不雅言语的行为<br>
+					<span style="font-size:12px; font-weight:bold; ">十、其它</span><br>
+					<span style="padding-left:27px;"></span>本协议的订立、执行、解释和争议的解决，均应适用中国法律。咱网及咱网电子商务用户双方如对本协议在履行中发生争执，应尽力协商解决，协商不成的，任何一方可将争议提交中国国际经济贸易仲裁委员会按照该会当时有效的仲裁规则在上海仲裁解决。本协议的规定是可分割的，如本协议任何规定被裁定为无效或不可执行，该规定可被删除而其余条款应予以执行。您同意，在发生并购后，本协议和所有纳入的协议可由咱网自行酌情决定向第三方自动转让。标题仅为参考之用，在任何方面均不界定、限制、解释或描述该条的范围或限度。<br>
+				 </div>
+			</div>
+			
+			<!--脚步内容-->
+		<div class="footer">
+			<div class="wrap-f">
+			<div class="footer_left fl">
+				<dl class="foot_gezn fl" >
+					<dt></dt>
+					<dd>
+						<a href="#">购物流程</a>
+						<br />
+						<a href="#">订单状况</a>
+						<br />
+						<a href="#">联系客服</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				<dl class="fl foot_zffs">
+					<dt></dt>
+					<dd>
+						<a href="#">在线支付</a>
+						<br />
+						<a href="#">支付宝</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				<dl class="fl foot_wlps">
+					<dt></dt>
+					<dd>
+						<a href="#">配送方式</a>
+						<br />
+						<a href="#">配送费用</a>
+						<br />
+						<a href="#">配送说明</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				
+				<dl class="fl foot_shfw">
+					<dt></dt>
+					<dd>
+						<a href="#">退换货条款</a>
+						<br />
+						<a href="#">保修说明</a>
+						<br />
+						<a href="#">退换货流程</a>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			
+			<div class="footer_right fl"></div>
+			</div>
+			<div class="footer_dibu">
+				
+				<ul class="bot">
+				<a href="http://www.360zan.com.cn/about.html">公司简介</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/certificate.html">组织机构</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/memorabilia.html">大事记</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/linktous.html">客服中心</a>
+				<span>|</span>
+				<a href="#">咱网招聘</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/contact.html">联系我们</a>
+				<span style="padding-right: 10px;">|</span>
+				全国客服热线：400-888-7360	
+			</ul>
+			
+			<ul class="copy">
+				<span>Copyright 2012 360zan.cn Inc. All Rights Reserved.咱网版权所有 沪ICP备11008587号</span>
+				<span style="margin: 1px 0 0 3px; * margin: 0px 0 0 3px;">
+					<a href="http://www.cnzz.com/stat/website.php?web_id=2294334" title="站长统计">
+						<img src="http://icon.cnzz.com/img/pic.gif"/>
+					</a>
+				</span>
+			</ul>
+			
+			<ul class="bot_img">
+				<a href="http://www.miibeian.gov.cn">
+					<img src="img/friend_logo01.jpg" style="width: 126px; height: 45px;"/>
+				</a>
+				<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20110825121359461">
+					<img src="img/friend_logo02.jpg" style="width: 156px; height: 45px;"/>
+				</a>
+			</ul>
+			</div>
+			
+	
+		</div>
+		</form>
 	</body>
 </html>

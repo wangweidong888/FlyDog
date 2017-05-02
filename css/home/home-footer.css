@@ -10,7 +10,7 @@
     padding-right: 79px;
 }
 .footer_left dl.foot_gezn dt {
-    background: url(../img/pic5/comment.gif) 0px -50px;
+    background: url(../../img/pic5/comment.gif) 0px -50px;
 }
 .footer_left dt {
     color: #3f3f3f;
@@ -26,17 +26,17 @@
     float: left;
     width: 2px;
     height: 63px;
-    background: url(../img/pic5/comment.gif) -396px -27px no-repeat;
+    background: url(../../img/pic5/comment.gif) -396px -27px no-repeat;
     margin-top: 47px;
 }
 .footer_left dl.foot_zffs dt {
-    background: url(../img/pic5/comment.gif) 0px -72px;
+    background: url(../../img/pic5/comment.gif) 0px -72px;
 }
 .footer_left dl.foot_wlps dt {
-    background: url(../img/pic5/comment.gif) 0px -93px;
+    background: url(../../img/pic5/comment.gif) 0px -93px;
 }
 .footer_left dl.foot_shfw dt {
-    background: url(../img/pic5/comment.gif) 0px -114px;
+    background: url(../../img/pic5/comment.gif) 0px -114px;
 }
 .footer_left a:hover{
 	color: #296c12;
@@ -44,7 +44,7 @@
 .footer_right {
     width: 378px;
     height: 127px;
-    background: url(../img/pic5/footer_right.jpg) no-repeat;
+    background: url(../../img/pic5/footer_right.jpg) no-repeat;
 }
 .bot{
 	width: 100%;

@@ -1,0 +1,315 @@
+.banner_news{
+	width: 980px;
+	height: 87px;
+	margin: auto;
+	border-bottom: 9px solid #fff;
+}
+.banner_news img{
+	display: block;
+	width: 980px;
+	height: 87px;
+}
+.banner__p{
+	width: 980px;
+	height: 25px;
+	margin: auto;
+}
+.banner__p  a{
+	display: inline-block;
+	color: #515151;
+	margin-top: 5px;
+}
+.banner__p  a:hover{
+	text-decoration: underline;
+}
+.banner__p .big{
+	display: inline-block;
+	width: 26px;
+	height: 24px;
+	background: url(../../img/page/layout.png) -474px -543px no-repeat;
+	float: left;
+	margin-right: 5px;
+}
+.store_buy{
+	width: 980px;
+	margin: auto;
+}
+
+.store_buy_top{
+	width: 980px;
+	height: 26px;
+	padding-top: 4px;
+	background: url(../../img/page/bg_list_third.jpg) repeat-x;
+}
+.store_buy_top_l{
+	width: 460px;
+	height: 26px;
+	line-height: 21px;
+	float: left;
+}
+.store_buy_top_l span{
+	color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    float: left;
+    margin-top: -4px;
+    padding-left: 33px;
+    width: 95px;
+    line-height: 26px;
+    background: url(../../img/page/layout.png) -350px -54px no-repeat;
+}
+.store_buy_top_l .buy_mr{
+	display: inline-block;
+	width: 57px;
+    height: 22px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    padding: 0;
+    background: url(../../img/page/layout.png) 0 -547px no-repeat;
+    border: none;
+    margin-left: 10px;
+    color: #515151;
+}
+.store_buy_top_l .buy_mr:hover{
+	text-decoration: underline;
+}
+.store_buy_top_l .buy_jg{
+	display: inline-block;
+	color: #515151;
+    width: 47px;
+    padding-left: 10px;
+    line-height: 22px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 5px;
+    background: url(../../img/page/layout.png) -60px -20px no-repeat;;
+}
+.store_buy_top_l .buy_jg:hover{
+	text-decoration: underline;
+}
+.store_buy_top_l .buy_jg2{
+	display: inline-block;
+	color: #515151;
+    width: 47px;
+    padding-left: 10px;
+    line-height: 22px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 5px;
+    background: url(../../img/page/layout.png) -120px -20px no-repeat;;
+}
+.store_buy_top_l .buy_jg2:hover{
+	text-decoration: underline;
+}
+.store_buy_top_l .xl_1{
+	display: inline-block;
+	color: #515151;
+    width: 47px;
+    padding-left: 10px;
+    line-height: 22px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 5px;
+    background: url(../../img/page/layout.png) -60px -20px no-repeat;;
+}
+.store_buy_top_l .xl_2{
+	display: inline-block;
+	color: #515151;
+    width: 47px;
+    padding-left: 10px;
+    line-height: 22px;
+    height: 22px;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 5px;
+    background: url(../../img/page/layout.png) -120px -20px no-repeat;;
+}
+.store_buy_top_l .xl_1:hover{
+	text-decoration: underline;
+}
+.store_buy_top_l .xl_2:hover{
+	text-decoration: underline;
+}
+.store_buy_top_r{
+	width: 290px;
+	height: 26px;
+	float: right;
+	margin-top: -4px;
+}
+.store_buy_top_r p{
+	color: #515151;
+	width: 238px;
+	line-height: 26px;
+	padding-left: 52px;
+}
+.store_buy_top_r p span{
+	margin-right: 9px;
+}
+.store_buy_top_r p b{
+	color: #ea3e49;
+    font-family: "Arial";
+    font-size: 12px;
+    margin: 0 2px;
+}
+.store_buy_top_r p strong{
+	font-weight: normal;
+    margin-right: 20px;
+    font-family: "Arial";
+    font-size: 12px;
+}
+ .a1{
+	color: #BAAAA3;
+	padding: 0 5px 0px 14px;
+    background: url(../../img/page/layout.png) 5px 6px no-repeat;
+    height: 20px;
+    line-height: 20px;
+}
+.store_buy_top_r p a{
+	display: inline-block;
+}
+ .a2{
+	color: #BAAAA3;
+	padding: 0 14px 0px 5px;
+    background: url(../../img/page/layout.png) -73px 6px no-repeat;
+    height: 20px;
+    line-height: 20px;
+}
+.a1:hover{
+	color: #9a3d1a;
+	background: url(../../img/page/layout.png) -55px 6px no-repeat;
+	text-decoration: underline;
+}
+.a2:hover{
+	color: #9a3d1a;
+	background: url(../../img/page/layout.png) -133px 6px no-repeat;
+	text-decoration: underline;
+}
+.thing{
+	width: 970px;
+	height: 346px;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+    border: 1px solid #d3bab5;
+    margin-top: -4px;
+}
+.thing dl{
+	width: 190px;
+    _width: 188px;
+    float: left;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    position: relative;
+    margin-top: 3px;
+}
+.thing dl dt{
+	border: 1px solid rgb(229, 217, 213);
+	width: 178px;
+    height: 226px;
+    margin: 5px 5px 8px 5px;
+    _margin: 5px 4px 8px 4px;
+}
+.dl_one{
+	width: 67px;
+    height: 67px;
+    background: url(../../img/page/layout.png) -430px -160px no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    display: none;
+}
+.thing dl dt:hover{
+	border: 1px solid rgb(227,134,213);
+}
+.thing dl dt:hover .dl_one{
+	display: block;
+}
+.thing dd{
+	width: 178px;
+    padding: 0 6px;
+    _width: 170px;
+    _padding: 0 3px;
+}
+.thing dd h5{
+	font-size: 12px;
+    font-weight: normal;
+    width: 178px;
+    padding-left: 3px;
+}
+.thing dd h5 a{
+	display: block;
+    color: #8f3717;
+    width: 178px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.thing dd p{
+	color: #a0a1a5;
+    line-height: 21px;
+    height: 21px;
+    width: 178px;
+    text-align: left;
+    padding-left: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.thing dd p span{
+	font-family: "微软雅黑";
+    color: #d7002e;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.thing .buy{
+	width: 62px;
+    height: 21px;
+    line-height: 21px;
+    display: block;
+    background: url(../../img/page/layout.png) -320px -28px no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+    bottom: 6px;
+}
+.pag{
+	text-align: right;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.pag span a{
+	display: inline-block;
+}
+.pag span .pag_num{
+	width: 20px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #eaa48f;
+    line-height: 18px;
+    text-align: center;
+    color: #666;
+    color: #fff;
+    border-color: #eaa48f;
+    background: #eaa48f;
+}
+.pag span .pag_num:hover{
+	text-decoration: underline;
+}
+.tex{
+	font-family: "宋体";
+    font-size: 12px;
+    color: #666;
+}

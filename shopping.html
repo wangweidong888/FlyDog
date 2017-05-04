@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/JQ.js"></script>
+		<script type="text/javascript" src="js/eject.js"></script>
+		<script type="text/javascript" src="js/details.js"></script>
+		<script type="text/javascript" src="js/shopping.js"></script>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/details/details_head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/details/details_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopping/shopping.css"/>
+	</head>
+	<body>
+		<!--头部开始-->
+		<div class="header">
+			<!--外套-->
+			<div class="head_wrap">
+				<div class="top_left fl">
+					<ul class="logo">
+						<a href="home.html">
+							<img src="img/zc/logo_02.png"/>
+						</a>
+					</ul>
+					<ul class="text">
+						<p>您好，欢迎来到天狗网上商城！</p>
+						<h3>天狗网上商城</h3>
+					</ul>
+				</div>
+				<div class="top_right fl">
+					<div class="topmuen">
+						<ul class="btn">
+							<input type="button" value class="login"/>
+							<input type="button" value class="zhuce"/>
+						</ul>
+						<ul class="menu">
+							<a href="#" class="cat">购物车</a> |
+							<a href="#">我的咱网</a> |
+							<a href="#">邮件订阅</a> |
+							<a href="#">帮助中心</a> |
+							<a href="#">官方微博</a> |
+							<a href="#">店长登陆</a>
+						</ul>
+						<ul class="call">
+							<a href="#">
+								<img src="img/zc/conture.gif"/>
+							</a>
+						</ul>
+					</div>
+					<div class="serchmuen">
+						<ul class="serchmuen_left"></ul>
+						<ul class="serchmuen_center">
+							<p class="fl">
+								<a href="#">
+									<img src="img/zc/shouye.png" width="36px" height="18px"/>
+								</a>
+							</p>
+							<h3 class="fl">
+								<img src="img/zc/line_muen.png" width="3px" height="18px"/>
+							</h3>
+							<h4 class="fl">
+								<a href="#">
+									<img src="img/zc/newp.png" width="58px" height="18px"/>
+								</a>
+							</h4>
+							<form action="javascript:;" id="searchKeyWordForm">
+								<h5 class="fl">
+									<input type="text" id="wareKeyWord" value class="sousuo_text" placeholder="平板电脑"/>
+									<input type="hidden" name="wareKeyWord" id="keyWord" value="%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%84%91">
+									<input name type="submit" value class="sousuo_but"/>
+								</h5>
+							</form>
+						</ul>
+						<ul class="serchmuen_right"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--顶部结束-->
+		
+		<!--购物车信息-->
+		<div class="car">
+			<div class="car_top">
+				<h1>您的购物车</h1>
+				<h2>Your shopping cart</h2>
+				<div class="top_pic"></div>
+			</div>
+			<div class="tip">
+				<h3>
+					<b>温馨提示：</b>
+					1.选购单中的商品不保留库存，请及时结算。2.商品的价格、相关活动信息及库存以订单提交时为准。
+					<a class="close"></a>
+				</h3>
+			</div>
+			<div class="car_bot">
+				<div class="bot1">
+						<ul class="bot_top">
+							<li class="li1">产品信息</li>
+							<li class="li2">单价</li>
+							<li class="li3">数量</li>
+							<li class="li4">金额小计</li>
+							<li class="li5" style="border-right: none;">操作</li>
+						</ul>
+						
+						
+						<ul class="bot_top1">
+							<li class="li1">
+								<dl>
+									<dt>
+										<a href="#">
+											<img src="img/shopping/2013_3_15_9_1680611638.jpg"/>
+										</a>
+									</dt>
+									<dd>
+										货品名称： 
+										<a href="#">布里奥索 男式时尚修身印花款磨毛长袖衬衫 西西里绿蓝格</a>
+									</dd>
+									<dd>
+										货品规格：
+										<span style="color:#989898;">颜色:图片色;尺码:38;</span>
+									</dd>
+									<dd>
+										货品编号：
+										<span style="color:#989898;">s0032033_1</span>
+									</dd>
+								</dl>
+							</li>
+							<li class="li2">￥79.00</li>
+							<li class="li3">
+								<a class="left">-</a>
+								<input type="text" id="change_txt_0" value="1" readonly='true'/>
+								<a class="right">+</a>
+							</li>
+							<li class="li4">￥79.00</li>
+							<li class="li5" style="border-right: none;">
+								<a class="delete">删除此商品</a>
+							</li>
+						</ul>
+					<div class="clear"></div>
+					
+					<form action="javacsript:;" class="car_qk">
+						<div class="car_clear">
+							<p class="qk">
+								<a href="#"></a>
+							</p>
+							<p class="js">
+								<font>
+									商品总计： <b class="font_js">1</b>件
+								</font>
+								商品总额
+								<span style="color:#8c8c8c; font-family:宋体; font-size:12px;">（不含运费）</span> ：
+								<span id="totalPrice">￥79.00元</span>
+							</p>
+						</div>
+						
+						<div class="go">
+							<input type="button" class="go_jx"/>
+							<input type="button" class="go_js"/>
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--购物车信息结束-->
+		
+		
+		
+		<!--脚步内容-->
+		<div class="footer">
+			<div class="wrap-f">
+			<div class="footer_left fl">
+				<dl class="foot_gezn fl" >
+					<dt></dt>
+					<dd>
+						<a href="#">购物流程</a>
+						<br />
+						<a href="#">订单状况</a>
+						<br />
+						<a href="#">联系客服</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				<dl class="fl foot_zffs">
+					<dt></dt>
+					<dd>
+						<a href="#">在线支付</a>
+						<br />
+						<a href="#">支付宝</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				<dl class="fl foot_wlps">
+					<dt></dt>
+					<dd>
+						<a href="#">配送方式</a>
+						<br />
+						<a href="#">配送费用</a>
+						<br />
+						<a href="#">配送说明</a>
+					</dd>
+				</dl>
+				<div class="linefooter"></div>
+				
+				<dl class="fl foot_shfw">
+					<dt></dt>
+					<dd>
+						<a href="#">退换货条款</a>
+						<br />
+						<a href="#">保修说明</a>
+						<br />
+						<a href="#">退换货流程</a>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			
+			<div class="footer_right fl"></div>
+			</div>
+			<div class="footer_dibu">
+				
+				<ul class="bot">
+				<a href="http://www.360zan.com.cn/about.html">公司简介</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/certificate.html">组织机构</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/memorabilia.html">大事记</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/linktous.html">客服中心</a>
+				<span>|</span>
+				<a href="#">咱网招聘</a>
+				<span>|</span>
+				<a href="http://www.360zan.com.cn/contact.html">联系我们</a>
+				<span style="padding-right: 10px;">|</span>
+				全国客服热线：400-888-7360	
+			</ul>
+			
+			<ul class="copy">
+				<span>Copyright 2012 360zan.cn Inc. All Rights Reserved.咱网版权所有 沪ICP备11008587号</span>
+				<span style="margin: 1px 0 0 3px; * margin: 0px 0 0 3px;">
+					<a href="http://www.cnzz.com/stat/website.php?web_id=2294334" title="站长统计">
+						<img src="http://icon.cnzz.com/img/pic.gif"/>
+					</a>
+				</span>
+			</ul>
+			
+			<ul class="bot_img">
+				<a href="http://www.miibeian.gov.cn">
+					<img src="img/friend_logo01.jpg" style="width: 126px; height: 45px;"/>
+				</a>
+				<a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20110825121359461">
+					<img src="img/friend_logo02.jpg" style="width: 156px; height: 45px;"/>
+				</a>
+			</ul>
+			</div>
+			
+	
+		</div>
+	</body>
+</html>

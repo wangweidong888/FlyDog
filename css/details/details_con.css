@@ -21,6 +21,7 @@
     padding: 0 0 5px 7px;
     margin-bottom: 5px;
     background: #fff;
+    margin-top: 6px;
 }
 .main .link p, .main .link p a {
     color: #404040;
@@ -209,8 +210,289 @@
     line-height: 0px;
     overflow: hidden;
 }
+.pro_shuju .pro_shuju_mess dd {
+    float: left;
+    display: inline;
+}
 .pro_shuju .shuju_ul s{
 	font-family: "微软雅黑";
     color: #404040;
     font-weight: 700;
+}
+.pro_shuju .pro_shuju_mess {
+    width: 480px;
+    color: #707070;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+.pro_shuju .pro_shuju_mess dl {
+    clear: both;
+    display: inline;
+}
+.pro_shuju .pro_shuju_mess dt {
+    width: 60px;
+    color: #707070;
+    line-height: 20px;
+    padding: 0 0 0 8px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.pro_shuju .pro_shuju_mess dd .add_one {
+    width: 20px;
+    height: 20px;
+    background: url(../../img/page/layout.png) -315px -130px no-repeat;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0 0 0;
+}
+.pro_shuju .pro_shuju_mess dd .pro_shuliang {
+    width: 35px;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    color: #707070;
+    margin-top: 8px;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 12px;
+    font-family: "宋体";
+}
+.pro_shuju .pro_shuju_mess dd .remove_one {
+    width: 20px;
+    height: 20px;
+    background: url(../../img/page/layout.png) -340px -130px no-repeat;
+    border: none;
+    cursor: pointer;
+    margin: 8px 9px 0 0;
+}
+.pro_shuju .xinghao {
+    width: 480px;
+    height: 95px;
+    background: #f2ecea;
+    clear: both;
+    margin-top: 10px;
+}
+.pro_shuju .xinghao_l {
+    width: 239px;
+    height: 95px;
+    float: left;
+}
+.xinghao_1 ul {
+    width: 239px;
+    float: left;
+    overflow: hidden;
+}
+.xinghao_1 ul li {
+    width: 239px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    text-align: left;
+    text-indent: 15px;
+    border: none;
+    padding: 0px;
+    margin: 5px 0 0 0;
+    cursor: auto;
+    position: relative;
+}
+.pro_shuju .xinghao .fengexian {
+    float: left;
+    width: 2px;
+    height: 87px;
+    background: url(../../img/page/xiangqing_fenge.png) bottom no-repeat;
+    padding-top: 4px;
+}
+.pro_shuju .fenxiang .fenxiang_left {
+    width: 78px;
+    overflow: hidden;
+    color: #707070;
+    float: left;
+    margin-left: 17px;
+}
+.bds_tools a {
+    background: url(../../img/is.png?cdnversion=20131219) no-repeat;
+}
+.pro_shuju .anniu {
+    float: left;
+    height: 36px;
+    width: 475px;
+    padding: 15px 0 0 0px;
+    margin-bottom: 10px;
+    clear: both;
+}
+.add_pro_car {
+    width: 86px;
+    height: 26px;
+    background: url(../../img/page/layout.png) -145px -130px no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    _margin-right: 1px;
+    vertical-align: bottom;
+}
+.add_hide {
+    width: 138px;
+    height: 37px;
+    background: url(../../img/page/layout.png) 0px -120px no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.add_hui {
+    width: 138px;
+    height: 37px;
+    background: url(../../img/page/layout.png) -363px -639px no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.main{ width:980px; margin:0 auto;padding-bottom:5px; background:#fff;}
+.main_spxq{ width:980px; margin:0 auto; padding-top:2px;background:#fff;}
+
+.pro_left {
+    width: 201px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+.pro_right {
+    width: 771px;
+    margin-bottom: 10px;
+}
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0px;
+    line-height: 0px;
+    overflow: hidden;
+}
+.pro_left_con {
+    width: 199px;
+    border: 1px solid #e5d9d5;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.pro_left_con {
+    width: 199px;
+    border: 1px solid #e5d9d5;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.pro_left_con h3 {
+    width: 199px;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "宋体";
+    color: #fff;
+    background: url(/Template/tmp1/images/bg_h3_third.jpg) repeat-x;
+}
+.pro_l_con_2 {
+    width: 199px;
+    overflow: hidden;
+    background: #f2ecea;
+}
+.pro_l_con_2 ul {
+    width: 199px;
+    padding: 0px 0 7px;
+}
+.pro_l_con_2 ul li {
+    width: 90px;
+    height: 42px;
+    float: left;
+    margin: 7px 1px 0px 6px;
+    display: inline;
+}
+.pro_l_con_2 ul li a {
+    width: 90px;
+    height: 42px;
+    display: block;
+}
+.pro_l_con_2 ul li .touming_a {
+    width: 88px;
+    height: 40px;
+    border: 1px solid #e3866a;
+    background: #b8775e;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    filter: alpha(Opacity=80);
+    display: none;
+    cursor: pointer;
+}
+.pro_l_con_2 ul li img {
+    width: 88px;
+    height: 40px;
+    border: 1px solid #e5d9d5;
+}
+img {
+    vertical-align: middle;
+}
+.pro_l_con_3 {
+    width: 199px;
+    overflow: hidden;
+    background: #f2ecea;
+}
+.pro_l_con_3 dl {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5d9d5;
+    margin: 0 12px 0 9px;
+    width: 177px;
+    overflow: hidden;
+}
+.pro_l_con_3 dl dt {
+    width: 52px;
+    height: 65px;
+    float: left;
+    margin: 0 11px 0 2px;
+    _margin: 0 2px 0 2px;
+    display: inline;
+}
+.pro_l_con_3 dl dd.jiage {
+    height: 20px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: normal;
+    color: #d10000;
+}
+.pro_l_con_3 dl dt a {
+    width: 50px;
+    height: 63px;
+    display: block;
+    border: 1px solid #e5d9d5;
+}
+.pro_l_con_3 dl dd {
+    width: 110px;
+    color: #999;
+    line-height: 20px;
+    overflow: hidden;
+}
+.pro_l_con_3 dl dd a{
+	color: #999;
+}
+.pro_l_con_3 dl dd.jiage a {
+    color: #d10000;
+}
+.pro_l_con_3 p {
+    padding: 10px;
+    text-align: right;
+}
+.pro_l_con_3 p a {
+    color: #baaaa3;
+}
+.pro_left_con h3 span {
+    padding-left: 85px;
+    font-family: "宋体";
+    font-size: 12px;
+    font-weight: normal;
+    color: #8f3717;
+}
+.pro_left_con h3 span a {
+    color: #8f3717;
 }

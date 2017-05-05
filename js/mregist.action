@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>会员注册-天狗网上商城tiangou.360zan.cn </title>
+	<link rel="shortcut icon" href="/images/favicon.ico"/>
+	<link href="/Template/tmp1/css/index.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/Template/tmp1/js/index.js"></script>
+	<script type="text/javascript" src="/member/js/validate.js"></script>
+	<script type="text/javascript" language="javascript">
+	     function huan(){
+	        $("#o").html("<img src=\"/member/yanzhen.jsp?t="+new Date()+";\" id=\"img\" onclick=\"this.src+='?' + Math.random();\"/><font size=\"2\"></font>");
+	     }
+	</script>
+	<!--[if IE 6]>
+	<script type=text/javascript src="/Template/js/DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+	DD_belatedPNG.fix('div, ul, span, li, p, a, img, .logoimages a img, .bg_h3, #qqClient a img');
+    </script>
+	<![endif]-->
+</head>
+<body>
+
+
+<script type="text/javascript">
+<!--
+	function checkLoginRed7(memberId){
+		if(memberId==null) {
+		window.location="/member/mlogin.action";}
+		else window.location="/member/Management/searchOrder.action?pageNum=1&orderDate=7&orderState=all";
+	}
+//-->
+</script>
+<script type="text/javascript">
+	setTimeout("include_data('/Template/tmp1/include/indexuser.jsp','topUserInfo')",800);
+	// setTimeout("include_data('/Template/red6/include/indexche.jsp','cheInfo')",800);
+		//公用加载页面方法
+	function include_data(url,cheElementId){
+		$.ajax({type:"GET", url:""+url+"?operateId="+cheElementId+"&t="+new Date(), success:function (result) {//（&t="+new Date()此代码是为了解决ie缓存问题，勿删）
+			var id=result.substring(result.indexOf("_|")+2,result.lastIndexOf("_|"));
+			var htmlStr=result.substring(result.lastIndexOf("_|")+2)
+			if(htmlStr!=null&&htmlStr!=''){
+				$("#"+id).empty();
+				$("#"+id).append(htmlStr);
+			}
+		}});
+		//防止恶意广告
+    	if(top!=self){  
+            top.location=self.location;                  
+    	} 
+	}
+	function checkKeyWordSubmit(){
+		var keyword = $.trim($("#wareKeyWord").val());
+		keyword = encodeURI(keyword); 
+		$("#keyWord").attr("value", keyword);
+		if(decodeURI(keyword) == "" || decodeURI(keyword) == null){
+		 	alert("请在搜索框中输入搜索关键字");
+		 	return false;
+		}else{ 
+			return true;
+		}
+	}
+	 
+	// 判断客户端输入的关键字不能为空
+	$(document).ready(function(){
+		var dataKey = '';
+	 	if(dataKey==null || dataKey==""){
+	 		$.post("/Template/tmp/getKeyWords.action?pageSize=1", function(result){
+				var data=eval("("+result+")");
+				$.each(data, function (objectIndex, object) {
+					var keyword = object.keyword;
+					$("#wareKeyWord").attr("value", keyword);
+					$("#keyWord").attr("value",encodeURI(keyword));
+				});
+				},'json');
+	 	}else{
+	 		$("#wareKeyWord").attr("value", dataKey);
+			$("#keyWord").attr("value",encodeURI(dataKey));
+	 	}
+	 	
+	 	$("#wareKeyWord").focus(function(){
+			var keyWord = $.trim($("#wareKeyWord").val());
+			if( keyWord!=null && keyWord!=''){
+				$(this).val("");
+			}
+		});
+		$("#wareKeyWord").blur(function(){
+			var keyWord = $.trim($("#wareKeyWord").val());
+			if( keyWord == null || keyWord == ""){
+				var deckey = $("#keyWord").val();
+				$(this).val(decodeURI(deckey));
+			}
+		});
+		
+	 	
+	 }); 
+	 
+</script>
+<!--联系店主-->
+<div class="dianzhang">
+    <span class="close_dianzhang"></span>
+    <dl>
+        	
+        		  <dt><img src="http://img.360zan.cn/picture/images/shopnopic.gif" width="135" height="100" />店主头像</dt>
+        	
+        	
+        <dd>店长姓名：<span>冯宁让</span></dd>
+        <dd>QQ：402638001<span></span></dd>
+        <dd>联系店长：<span>
+        	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=402638001&site=qq&menu=yes">
+        	<img border="0" src="http://wpa.qq.com/pa?p=2:402638001:41" alt="" title=""/></a></span>
+        </dd>
+    </dl>
+</div>
+<!--头部内容开始-->
+<div class="top_bg">
+	<div class="head">
+  <div class="leftlogo fl">
+   <ul class="logoimages"><a href="/" target="_blank" ><img src="/Template/tmp1/images/logo_02.png" width="77px" height="69px" /></a></ul>
+   <ul class="logotxt" id="topUserInfo" >
+    <p>您好，欢迎来到天狗网上商城</p>
+	<h3>天狗网上商城</h3>
+   </ul>
+  </div>
+  <div class="muenright fl">
+    <div class="topmuen">
+    
+		<ul class="button">
+			 <input type="button" name="botton" value="" class="denglu" onclick="javascript:window.open('/member/mlogin.action',target='_self')" />
+			 <input type="button" name="botton" value="" class="zhuce" onclick="javascript:window.open('/member/mregist.action',target='_self');" />
+		</ul>
+	
+	<ul class="menu">
+	<a href="/template_red5/cart/selectShoppingCart.action" class="cat">购物车</a> | 
+	<a href="javascript:onClick=checkLoginRed7()" >我的咱网</a> | 
+	<a href="http://list.qq.com/cgi-bin/qf_invite?id=7783cfc8e6bbde3c5ddb33f9a9640d1ea873b6282058d99d"  target="_blank">邮件订阅</a> | 
+	<a href="/help/procedure.html" target="_blank">帮助中心</a> | 
+	<a href="http://weibo.com/zanwangshanghai" target="_blank">官方微博</a> | 
+	<a href="/mslogin.jsp" >店长登录</a>
+	</ul>
+    <ul class="contact"><a href="#" class="open_dianzhang"><img src="/Template/tmp1/images/conture.gif" /></a></ul>
+	</div>
+	<div class="serchmuen">
+	  <ul class="serchmuen_left"></ul>
+	  <ul class="serchmuen_center">
+	  <p class="fl"><a href="/"><img src="/Template/tmp1/images/shouye.png" width="36px" height="18px" /></a></p>
+	  <h3 class="fl"><img src="/Template/tmp1/images/line_muen.png" width="3px" height="18px" /></h3>
+	   <!-- <h4 class="fl"><a href="/brandzx.action" target="_blank"><img src="/Template/tmp1/images/pinpaizzhixiao.png" width="58px" height="18px" /></a></h4> -->
+	  <h4 class="fl"><a href="/newp.action" target="_blank"><img src="/Template/tmp1/images/newp.png" width="58px" height="18px" /></a></h4>
+	  <form action="/keyQuery6.action" onsubmit="return checkKeyWordSubmit()" method="get" id="searchKeyWordForm" >
+	   <h5 class="fl"><input type="text" id="wareKeyWord"  value="" class="sousuo_text" />
+	   <input type="hidden"  name="wareKeyWord" id="keyWord" />
+	   <input name="" type="submit" value="" class="sousuo_but" /></h5>
+	   </form>
+	  </ul>
+	  <ul class="serchmuen_right"></ul>
+	</div>
+  </div>
+ </div>
+</div>
+ 
+<!--注册中间内容开始-->
+ <form action="/member/registerMember.action?verson=5" method="post" id="memberRegisterForm">
+<div class="denglu_box" style="height:600px;">
+  <div class="denglu_box_a">注册会员REGISTRATION</div>
+  <div class="denglu_box_b">
+    <ul class="denglu_box_bleft fl">
+	  <li>
+			<span class="zc_yhm" style="text-align: right;">用 户 名：</span>
+			<span >
+				<input id="user" name="member.memberUsername" onblur="checkUserName()" type="text" class="i_text" />
+			</span>
+			<span class="zc_ts" id="n">* 字母开头,可含数字,5-15个字符</span>
+		</li>
+		<li>
+			<span class="zc_yhm" style="text-align: right;">设置密码：</span>
+			<span><input name="member.memberPassword" id="pa" onblur="checkPassword()" type="password" class="i_text " /></span>
+			<span class="zc_ts" id="p">* 字母开头6-16字符, 可包含特殊符号</span>
+		</li>
+		<li>
+			<span class="zc_yhm" style="text-align: right;">确认密码：</span>
+			<span><input name="pwd" id="pass" onblur="checkRePassword()" type="password" class="i_text" /></span>
+			<span class="zc_ts" id="rp">* 再次输入密码</span>
+		</li>
+		<li>
+			<span class="zc_yhm" style="text-align: right;">邮　　箱：</span>
+			<span><input name="member.memberEmail" id="email" onblur="checkemail(true)" type="text" class="i_text"/></span>
+			<span class="zc_ts" id="e">*E-Mail可用于接收账户信息及密码找回等</span>
+		</li>
+		<li>
+			<span class="zc_yhm" style="text-align: right;">验 证 码：</span>
+			<span><input name="captcha" size="30" id="captcha" onblur="checkCaptcha()" type="text" class="w_text" /></span>
+			<span style="padding-left:7px; padding-top:2px;" id="o"></span>
+            <span class="zc_ts kbq">看不清，<a href="javascript:huan()" >换一张</a></span>
+		</li>
+		<li>
+		  <p class="fwtk" ><input name="" type="checkbox" id="agrrement" value="" />我已阅读并同意相关服务条款</p>
+		  <p class="fwtk"  ><input name="" type="button" onclick="submitRegister()" class="tzyz_but" /></p>
+		</li>
+	</ul>
+	<ul class="denglu_box_bright fr">
+	  <h3>我已经是咱网商城（天狗）会员</h3>
+	  <p><input name="" type="button" class="tzyz_but" value="" style="width:135px; height:35px; background:url(/Template/tmp1/images/orderbg.gif) -758px -350px no-repeat; cursor: pointer; border:0px;" onclick="javascript:window.location='/member/mlogin.action'"/></p>
+	</ul>
+  </div>
+<div class="xy" style="line-height:18px;">
+					<h3>用户协议</h3>
+					<span style="padding-left:27px;"></span>以下详述咱网为您提供服务的条款。本协议详述您在使用我们的服务所须遵守的条款和条件。如您有任何疑问，请及时联系我们。
+					您注册成为咱网电子商务用户（以下简称：本网站用户）前，必须仔细阅读本用户协议和隐私声明，一旦您注册成为了本网站用户即表示您已经阅读、同意并接受本用户协议和隐私声明中所含的所有条款和条件。如果我们对本声明进行了任何变更，我们会在咱网（以下简称：本网站）页面上发布有关变更事项的通知，所有协议内容在发布之日后自动生效。如您有任何疑问，请先联系客服，必要时申请注销您的会员名。<br/>
+				<b>一、本网站服务条款的确认和接纳站拥有</b><br/>
+					<span style="padding-left:27px;"></span>本网站各项服务的所有权和运作权归本网<br/>
+					<b>二、用户注册</b><br/>
+					<b>(1)</b>用户资格<br/>
+					<span style="padding-left:27px;"></span>本网站用户必须是适用法律下能够签订具有法律约束力的合同的自然人。在不限制上述规定的前提下，我们的服务不向18周岁以下或被临时/无限期中止的本网站用户提供。请您仔细阅读用户协议后注册，并妥善保管好您的咱网电子商务帐户（以下简称：本网站帐户），不得向其他方转让或出售。另外，本网站保留根据其意愿中止或终止您的本网站帐户的权利。<br/>
+					<b>(2)</b>资料填写<br/>
+					<span style="padding-left:27px;"></span>会员的帐号、密码和安全性。请你一旦注册成功成为会员，你将得到一个密码和帐号。如果你不保管好自己的帐号和密码安全，将负全部责任。另外，每个会员都要对其帐户中的所有活动和事件负全责。你可随时根据指示改变你的密码，也可以结束旧的帐户重开一个新帐户。会员同意若发现任何非法使用会员帐号或安全漏洞的情况，请立即通告咱网。<br/>
+					<b>三、隐私政策</b><br/>
+					<span style="padding-left:27px;"></span>本网站设有适用于所有用户并纳入用户协议的隐私声明。您应当在注册时阅读并接受隐私声明以使用本网站，且您在作为本网站用户期间将继续受其规定（及本网站对隐私声明作出的任何修订）的约束。<br/>
+					<span style="padding-left:27px;"></span>个人数据资料。包括个人识别资料：如姓名、性别、年龄、出生日期、身份证号码(或护照号码)、电话、通信地址、住址、电子邮件地址等情况；个人背景：职业、教育程度、收入状况、婚姻、家庭状况。在未经您同意及确认之前，本网站承诺不会将您的资料用于其它目的。<br/>
+					<span style="padding-left:27px;"></span>使用非个人信息。本网站将通过您的IP地址来收集非个人化的信息，包括您的浏览器性质、操作系统种类、给您提供接入服务的ISP的域名等，以优化在您计算机屏幕上显示的页面。通过收集上述信息，我们亦进行客流量统计，从而改进网站的管理和服务。 <br/>
+					<span style="padding-left:27px;"></span>个人数据安全。本网站采用安全性的服务器使用控制设备保护您的个人数据。<br/>
+					<span style="padding-left:27px;"></span>个人数据披露和限制利用。当国家机构依照法定程序要求本网站披露个人资料时，本网站将根据执法单位的要求或为公共安全目的提供个人资料。在此情况下披露的任何内容，本网站不承担任何责任。本网站在符合下列条件时，对个人资料进行必要范围以外利用：已取得您的书面同意；为免除您在生命、身体或财产方面之急迫危险；为防止他人权益之重大危害；为增进公共利益，且无害于您的重大利益。<br/>
+					<b>四、交易及留言管理</b><br/>
+					<span style="padding-left:27px;"></span>用户在本网站进行物品购买和留言时必须遵守以下条款
+					您在本网站的一切操作应遵守所有适用的中国法律、法规、条例和地方性法律要求。同时您必须确保遵守本用户协议和隐私声明以及纳入上述文件的所有其它条款、规则等一切相关内容。如您在本网站购买商品，您有义务完成与本网站的购买交易（法律或本用户协议禁止的交易除外）。购买操作执行并下订单后，即表示您同意该商品描述所含的一切出售条件，（商品出售条件不违反本协议并合法）。本网站上的广告，价目表和声明并不构成要约。在本网站接受您的订单之前，您和本网站之间不存在合同关系。本网站有权在发现显现的产品及订单的明显错误或缺货的情况下，单方面撤回该信息或终止交易。本网站保留对产品订购的数量的限制权。在下订单的同时，即表示您默认了已经达到购买这些产品的法定年龄，并将对您在订单中提供的所有信息的真实性负责。 产品价格和可获性都在网站上指明。这类信息将随时更改且不发任何通知。每一项显示的价格都包含了增值税（按照中国的标准税率）。送货费将另外结算，费用根据您选择的送货方式的不同另行计算。在确认了您的订单后发生的意外情况，比如由于供应商提价、税额变化引起的价格变化、或是由于网站的错误等造成价格变化，本网站会通过email或电话通知您，让您决定是否取消订单。拒绝提供担保:会员明确同意信息服务的使用由会员个人承担风险。 咱网不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保，但会在能力范围内，避免出错。 <br/>
+				<span style="padding-left:27px;"></span>用户不能在本网站上使用谩骂，侮辱，诽谤等不雅言语以及其它攻击其他用户和网站的言语。咱网有权删除此类留言及其它咱网认为不合适的留言。<br/>
+					<span style="font-size:12px; font-weight:bold; ">五、物品质量与售后服务</span><br/>
+				<b>(1)</b>详见退换货政策<br/>
+					<span style="padding-left:27px;"></span>物品的质量，有国家标准或专业标准的，按国家标准或专业标准执行；无前述标准的，按生产厂商的企业标准执行；无生产厂商企业标准的，由用户与本网站协商确定。如果商品质量不符合标准，用户可以要求换货或退货。<br/>
+					<span style="font-size:12px; font-weight:bold; ">六、网站安全</span><br/>
+					<span style="padding-left:27px;"></span>您同意，未经本网站明示书面准许，您不会为了任何目的使用任何机器人、蜘蛛软件、刷屏软件或其他自动方式进入网站。此外，您同意绝不进行以下操作：<br/>
+					<span style="padding-left:27px;"></span>进行任何对本网站造成或可能造成（按本网站自行酌情确定）不合理或不合比例的重大负荷的行为；<br/>
+					<span style="padding-left:27px;"></span>未经本网站事先明示书面准许，对本网站的任何内容（除您的个人信息以外）制作拷贝、进行复制、修改、制作衍生作品、分发或公开展示等的侵权行为； 干扰或试图干扰本网站的正常工作或活动；<br/>
+					<span style="padding-left:27px;"></span>在本网站中使用可能视为被禁止或可能被禁止的任何内容； <br/>
+					<span style="padding-left:27px;"></span>对本网站使用不良数据。包含可能破坏、改变、删除、不利影响、秘密截取、未经授权而接触，或征用任何系统、数据、个人资料的病毒、特洛依木马、蠕虫、定时炸弹、删除蝇、复活节彩蛋、间谍软件、其他电脑程序等。<br/>
+					<span style="font-size:12px; font-weight:bold; ">七、知识产权声明</span><br/>
+					<span style="padding-left:27px;"></span>本网站用户同意接收来自咱网或者咱网合作伙伴发出的信息，包括但不限于电子邮件，手机短消息。<br/>
+					<span style="padding-left:27px;"></span>咱网有义务在技术上确保网站的正常运行，尽力避免服务中断或将中断时间限制在最短时间内，保证用户网上交易活动的顺利进行。但如因不可抗力或其他本网站无法控制的因素使网站崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，本网站不承担责任；任何用户向本网站提供错误、不完整、不实信息等造成不能正常使用本网站服务或遭受任何其他损失，概与本网站无关。<br/>
+					<span style="font-size:12px; font-weight:bold; ">八、免责声明</span><br/>
+					<span style="padding-left:27px;"></span>如因不可抗力或其它本站无法控制的原因使本站销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等本站会尽可能合理地协助处理善后事宜，并尽最大努力使客户免受损失。<br/>
+					<span style="font-size:12px; font-weight:bold; ">九、服务终止</span><br/>
+					<span style="padding-left:27px;"></span>会员或咱网可随时根据实际情况中断一项或多项服务。咱网不需对任何个人或第三方负责而随时中断服务。会员若反对任何服务条款的建议或对后来的条款修改有异议，或对咱网服务不满，会员可以行使如下权利： 不再使用咱网信息服务。<br/><span style="padding-left:27px;"></span>通知咱网停止对该会员的服务。<br/>
+					<span style="padding-left:27px;"></span>结束会员服务后，会员使用咱网服务的权利马上中止。从那时起，会员没有权利，咱网也没有义务传送任何未处理的信息或未完成的服务给会员或第三方。<br/>
+					  <span style="font-size:12px; font-weight:bold; ">有以下行为的会员将被取消会员资格</span><br/>
+					  <span style="padding-left:27px;"></span>违反注册条款<br/>
+					   <span style="padding-left:27px;"></span>提供虚假个人资料 <br/>
+					  <span style="padding-left:27px;"></span>会员有损公司利益的行为 <br/>
+					  <span style="padding-left:27px;"></span>违反中国的法律、法规、违反互联网相关规定的行为 <br/>
+					 <span style="padding-left:27px;"></span>将会员帐号用于出售、拍卖等，拿会员帐号当作商品进行交易的行为 <br/>
+					   <span style="padding-left:27px;"></span>出借、转让 会员帐号给其他会员等不恰当行使会员权利的行为 <br/>
+					  <span style="padding-left:27px;"></span>通过盗取密码、诈骗等不正当手段获得会员帐号的行为<br/>
+					  <span style="padding-left:27px;"></span>在商品留言，blog中多次或大量使用谩骂，侮辱，诽谤等不雅言语的行为<br/>
+					<span style="font-size:12px; font-weight:bold; ">十、其它</span><br/>
+					<span style="padding-left:27px;"></span>本协议的订立、执行、解释和争议的解决，均应适用中国法律。咱网及咱网电子商务用户双方如对本协议在履行中发生争执，应尽力协商解决，协商不成的，任何一方可将争议提交中国国际经济贸易仲裁委员会按照该会当时有效的仲裁规则在上海仲裁解决。本协议的规定是可分割的，如本协议任何规定被裁定为无效或不可执行，该规定可被删除而其余条款应予以执行。您同意，在发生并购后，本协议和所有纳入的协议可由咱网自行酌情决定向第三方自动转让。标题仅为参考之用，在任何方面均不界定、限制、解释或描述该条的范围或限度。<br/>
+				 </div>
+</div>
+</form>
+<!--登陆中间内容结束-->
+ <div class="clearB"></div>
+
+
+
+<script type="text/javascript" src="/Template/js/base64.js"></script>
+<script type="text/javascript">
+var domainLogin = "";
+$(function() {
+    //设置门店作用域值
+    var loginName = "";
+    if (loginName == null || loginName == "") {
+        var cookieValue = getCookie('domain_login');
+        if (cookieValue == null || cookieValue == "" || cookieValue == false) {
+            $.ajax({
+                url: 'http://chaoshi001.vipshequ.cn/login/setCookie.action',
+                async: false,
+                dataType: "jsonp",
+                jsonp: "jsonCallBack",
+                success: function(data) {}
+            });
+        } else {
+            domainLogin = cookieValue;
+            window.location.reload(); //自动登录上
+        }
+    } else {
+    	var cookieValue = getCookie('domain_login');
+        if (cookieValue == null || cookieValue == "" || cookieValue == false) {
+			domainLogin = "[{'id':'" +  + "','name':'" + loginName + "'}]";
+			addCookie("domain_login", domainLogin, 2);
+			window.location.reload();
+        }
+        domainLogin = loginName;
+    }
+});
+function jsonCallBack(data) {
+    if (data != null && data != "null") {
+        //保存至cookie
+        domainLogin = "[{'id':'" + data[0].id + "','name':'" + data[0].name + "'}]";
+        addCookie("domain_login", domainLogin, 2);
+        window.location.reload();
+    } else {
+        $.ajax({
+            url: 'http://www.vipshequ.com/login/setCookie.action',
+            type: "GET",
+            async: false,
+            dataType: "jsonp",
+            jsonp: "jsonCallBack2",
+            success: function(data) {}
+        });
+    }
+}
+function jsonCallBack2(data) {
+    if (data != null && data != "null") {
+        //保存至cookie
+        domainLogin = "[{'id':'" + data[0].id + "','name':'" + data[0].name + "'}]";
+        addCookie("domain_login", domainLogin, 2);
+        window.location.reload();
+    }
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';'); //把cookie分割成组    
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i]; //取得字符串    
+        while (c.charAt(0) == ' ') { //判断一下字符串有没有前导空格    
+            c = c.substring(1, c.length); //有的话，从第二位开始取    
+        }
+        if (c.indexOf(nameEQ) == 0) { //如果含有我们要的name    
+            return unescape(c.substring(nameEQ.length, c.length)); //解码并截取我们要值    
+        }
+    }
+    return false;
+}
+//写入cookie
+function addCookie(objName, objValue, objHours) { //添加cookie  
+    objValue = base64encode(objValue); //base64位编码加密
+    var str = objName + "=" + escape(objValue);
+    if (objHours > 0) { //为0时不设定过期时间，浏览器关闭时cookie自动消失  
+        var date = new Date();
+        var ms = objHours * 3600 * 1000;
+        date.setTime(date.getTime() + ms);
+        str += "; expires=" + date.toGMTString();
+        str += ";path=/;domain=.360zan.cn";
+    }
+    document.cookie = str;
+}
+function clearAll() {
+    $.ajax({ //门店退出
+        url: 'http://chaoshi001.vipshequ.cn/login/delCookie.action',
+        type: "GET",
+        async: true,
+        dataType: "jsonp",
+        success: function(data) {}
+    });
+}
+function delShangcheng() { //商城退出
+    window.location.href = "/member/member-memberQuit.action";
+}
+function delSociety() { //社区退出
+    $.ajax({
+        url: 'http://www.vipshequ.com/login/delCookie.action',
+        type: "GET",
+        async: true,
+        dataType: "jsonp",
+        success: function(data) {}
+    });
+}
+</script>
+<!--底部内容开始-->
+<div class="footer">
+ <div class="footer_top">
+   <div class="footer_topleft fl">
+            <dl class="fl foot_gezn">
+                <dt></dt>
+                <dd><a href="/help/procedure.html" target="_blank">购物流程</a><br /><a href="/help/order.html" target="_blank">订单状态</a><br /><a href="/help/service.html" target="_blank">联系客服</a></dd>
+            </dl>
+			<div class="linefooter"></div>
+            <dl class="fl foot_zffs">
+                <dt></dt>
+                <dd><a href="/help/allbuy.html" target="_blank">在线支付</a><br /><a href="/help/alipay.html" target="_blank">支付宝</a></dd>
+            </dl>
+			<div class="linefooter"></div>
+            <dl class="fl foot_wlps">
+                <dt></dt>
+                <dd><a href="/help/shipping.html" target="_blank">配送方式</a><br /><a href="/help/costs.html" target="_blank">配送费用</a><br /><a href="/help/explanation.html" target="_blank">配送说明</a></dd>
+            </dl>
+			<div class="linefooter"></div>
+            <dl class="fl foot_shfw">
+                <dt></dt>
+                <dd><a href="/help/clause.html" target="_blank">退换货条款</a><br /><a href="/help/guarantee.html" target="_blank">保修说明</a><br /><a href="/help/alteration.html" target="_blank">退换货流程</a></dd>
+            </dl>
+
+   </div>
+   <div class="footer_topright fl"></div>
+ </div>
+ <div class="footer_dibu">
+  <ul class="caidan">
+  		<a href="http://www.360zan.com.cn/about.html" target="_blank">公司简介</a><span>|</span><a href="http://www.360zan.com.cn/certificate.html" target="_blank">组织机构</a><span>|</span>
+		<a href="http://www.360zan.com.cn/memorabilia.html" target="_blank">大事记</a><span>|</span><a href="http://www.360zan.com.cn/linktous.html" target="_blank">客服中心</a><span>|</span><a href="/aboutUs/recruitment.html" target="_blank">咱网招聘</a><span>|</span>
+		<a href="http://www.360zan.com.cn/contact.html" target="_blank">联系我们</a>
+		<span style="padding-right:10px;">|</span>全国客服热线：400-888-7360</ul>
+	  <ul class="copyright"><span>Copyright 2012 360zan.cn Inc. All Rights Reserved.咱网版权所有 沪ICP备11008587号</span><span style="margin:1px 0 0 3px;*margin:0px 0 0 3px;"><script src="http://s15.cnzz.com/stat.php?id=2294334&web_id=2294334&show=pic" language="JavaScript"></script></span></ul>
+	  <ul class="coip">
+	   <a href="http://www.miibeian.gov.cn" target="_blank"><img src="/Template/tmp1/images/friend_logo01.jpg" width="126" height="45" /></a>
+	   <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20110825121359461" target="_blank"><img src="/Template/tmp1/images/friend_logo02.jpg" width="156" height="45" /></a>
+	  </ul>
+ </div>
+</div>
+<!--底部内容结束-->
+
+</body>
+</html>

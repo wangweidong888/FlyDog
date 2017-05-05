@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>会员登录-天狗网上商城tiangou.360zan.cn </title>
 		<script type="text/javascript" src="js/JQ.js"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/login1/login.css"/>
 		<link rel="stylesheet"  type="text/css" href="css/login1/login_c.css">
@@ -27,8 +28,8 @@
 				<div class="top_right fl">
 					<div class="topmuen">
 						<ul class="btn">
-							<input type="button" value class="login"/>
-							<input type="button" value class="zhuce"/>
+							<input type="button" value class="login" onclick="login()"/>
+							<input type="button" value class="zhuce" onclick="register()"/>
 						</ul>
 						<ul class="menu">
 							<a href="#" class="cat">购物车</a> |
@@ -104,8 +105,8 @@
 						
 						<div class="logging_password">
 							<span class="title">密　码：</span>
-							<input class="i_text" name="member.memberUsername" id="memberName" onblur="userName()" value="" type="text">
-							<span id="userInfoCue1_1">
+							<input class="i_text" name="member.memberUsername" id="memberName" onblur="password()" value="" type="text">
+							<span id="userInfoCue1_2">
 								<font color="#ff9900">密码不能为空</font>
 							</span>
 						</div>
@@ -113,8 +114,11 @@
 						
 						<div class="logging_password">
 							<span class="title">验证码：</span>
-							<input type="text" name="captcha" id="captcha" class="w_text"/>
-							<span style="padding-left: 7px;" id="o">&nbsp;&nbsp;</span>
+							<input type="text" name="captcha" id="captcha" class="w_text" onblur="yzm()"/>
+							
+							<span style="padding-left: 7px;" id="o">
+								<img src="http://tiangou.360zan.cn/member/yanzhen.jsp?t=Fri%20May%2005%202017%2015:05:05%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4);?0.25754790501510927" id="img" onclick="this.src+='?' + Math.random();">
+							</span>
 							<span>
 								看不清,
 								<a href="#">换一张</a>

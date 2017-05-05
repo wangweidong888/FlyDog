@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>会员注册-天狗网上商城tiangou.360zan.cn</title>
+		<script type="text/javascript" src="js/JQ.js"></script>
+		<script type="text/javascript" src="js/regitster.js"></script>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet"  type="text/css" href="css/regitster/regitster.css">
 		<link rel="stylesheet"  type="text/css" href="css/regitster/reg.css">
-		<script type="text/javascript" src="js/JQ.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -82,32 +83,39 @@
 						<li>
 							<span class="zc_yhm" style="text-align: right;">用 户 名：</span>
 							<input id="user" name="member.memberUsername" " type="text" class="i_text">
-							<span class="zc_ts" id="n"><font color="ff9900">* 字母开头,可含数字,5-15个字符</font></span>
+							<span class="zc_ts font1" id="account"><font>* 字母开头,可含数字,5-15个字符</font></span>
 						</li>
 						<li>
 							<span class="zc_yhm" style="text-align: right;">设置密码：</span>
-							<input id="user" name="member.memberUsername" " type="text" class="i_text">
-							<span class="zc_ts" id="n">* 字母开头6-16字符, 可包含特殊符号</span>
+							<input id="pa" name="member.memberUsername" " type="password" class="i_text">
+							<span class="zc_ts font2" id="password">* 字母开头6-16字符, 可包含特殊符号</span>
 						</li>
 						<li>
 							<span class="zc_yhm" style="text-align: right;">确认密码：</span>
-							<input id="user" name="member.memberUsername" " type="text" class="i_text">
-							<span class="zc_ts" id="n">* 再次输入密码</span>
+							<input id="pas" name="member.memberUsername" " type="password" class="i_text">
+							<span class="zc_ts font3" id="passworda">* 再次输入密码</span>
 						</li>
 						<li>
 							<span class="zc_yhm" style="text-align: right;">邮　　箱：</span>
-							<input id="user" name="member.memberUsername" " type="text" class="i_text">
-							<span class="zc_ts" id="n">*E-Mail可用于接收账户信息及密码找回等</span>
+							<input id="email" name="member.memberUsername" " type="text" class="i_text">
+							<span class="zc_ts font4" id="email1">*E-Mail可用于接收账户信息及密码找回等</span>
 						</li>
 						<li>
 							<span class="zc_yhm" style="text-align: right;">验 证 码：</span>
 							<span>
 								<input name="captcha" size="30" id="captcha" type="text" class="w_text">
 							</span>
-							<span id="o" style="padding-left: 7px; padding-top: 2px;"></span>
+							<span id="o" style="padding-left: 7px; padding-top: 2px;">
+								<img src="http://tiangou.360zan.cn/member/yanzhen.jsp?t=Fri%20May%2005%202017%2015:05:05%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4);?0.25754790501510927" id="img" onclick="this.src+='?' + Math.random();">
+							</span>
+							<script type="text/javascript">
+								function huan(){
+	$('#o img').attr('src','http://tiangou.360zan.cn/member/yanzhen.jsp?t=Fri%20May%2005%202017%2015:05:05%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4);"?" + Math.random()')	
+}
+							</script>
 							<span class="zc_ts kbq">
 								看不清，
-								<a href="#">换一张</a>
+								<a onclick="huan()">换一张</a>
 							</span>
 						</li>
 						<li>

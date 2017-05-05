@@ -1,71 +1,3 @@
-$(function(){
-	
-	$('#banner_pic0').click(function(){
-		$('#banner0').css('display','block')
-		$('#banner1').css('display','none')
-		$('#banner2').css('display','none')
-		$('#banner3').css('display','none')
-		$('#banner4').css('display','none')
-		$('#banner_pic0').attr('class','on')
-		$('#banner_pic1').attr('class','off')
-		$('#banner_pic2').attr('class','off')
-		$('#banner_pic3').attr('class','off')
-		$('#banner_pic4').attr('class','off')
-	})
-	
-	$('#banner_pic1').click(function(){
-		$('#banner0').css('display','none')
-		$('#banner1').css('display','block')
-		$('#banner2').css('display','none')
-		$('#banner3').css('display','none')
-		$('#banner4').css('display','none')
-		$('#banner_pic0').attr('class','off')
-		$('#banner_pic1').attr('class','on')
-		$('#banner_pic2').attr('class','off')
-		$('#banner_pic3').attr('class','off')
-		$('#banner_pic4').attr('class','off')
-	})
-	
-	$('#banner_pic2').click(function(){
-		$('#banner0').css('display','none')
-		$('#banner1').css('display','none')
-		$('#banner2').css('display','block')
-		$('#banner3').css('display','none')
-		$('#banner4').css('display','none')
-		$('#banner_pic0').attr('class','off')
-		$('#banner_pic1').attr('class','off')
-		$('#banner_pic2').attr('class','on')
-		$('#banner_pic3').attr('class','off')
-		$('#banner_pic4').attr('class','off')
-	})
-	
-	$('#banner_pic3').click(function(){
-		$('#banner0').css('display','none')
-		$('#banner1').css('display','none')
-		$('#banner2').css('display','none')
-		$('#banner3').css('display','block')
-		$('#banner4').css('display','none')
-		$('#banner_pic0').attr('class','off')
-		$('#banner_pic1').attr('class','off')
-		$('#banner_pic2').attr('class','off')
-		$('#banner_pic3').attr('class','on')
-		$('#banner_pic4').attr('class','off')
-	})
-	
-	
-	$('#banner_pic4').click(function(){
-		$('#banner0').css('display','none')
-		$('#banner1').css('display','none')
-		$('#banner2').css('display','none')
-		$('#banner3').css('display','none')
-		$('#banner4').css('display','blcok')
-		$('#banner_pic0').attr('class','off')
-		$('#banner_pic1').attr('class','off')
-		$('#banner_pic2').attr('class','off')
-		$('#banner_pic3').attr('class','off')
-		$('#banner_pic4').attr('class','on')
-	})
-})
 
 $(function(){
 	var index = 0,
@@ -304,7 +236,7 @@ $(function(){
 		$('.menudiv2 > div').css('display','none').eq(index).css('display','block')
 		
 		},3000)	
-		
+	
 	$('.tab2').on('mouseenter',function(){
 		clearInterval(timer);
 		})
@@ -320,7 +252,9 @@ $(function(){
 			
 			},2500)	
 		})
+	
 　　})
+	
 });
 
 
@@ -340,7 +274,7 @@ $(function(){
 		$('.menudiv3 > div').css('display','none').eq(index).css('display','block')
 		
 		},4000)	
-		
+	
 	$('.tab3').on('mouseenter',function(){
 		clearInterval(timer);
 		})
@@ -355,6 +289,8 @@ $(function(){
 			$('.menudiv3 > div').css('display','none').eq(index).css('display','block')
 			
 			},3500)	
-			})
-　　		});
-	})
+		})
+　　	});
+})
+
+

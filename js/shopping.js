@@ -1,3 +1,11 @@
+function rec(){
+	var firm = confirm('真的要删除吗？');
+		if(firm == true){
+				$('.car').html('<div class="car_wu"><p>您的购物车中没有商品，请您先<a href="http://127.0.0.1:8020/FlyDog2/home.html"></a></p></div>')
+				$('.car').css('height',162)
+			}
+	}
+
 $(function(){
 	
 	$('.left').click(function(){
@@ -30,7 +38,10 @@ $(function(){
 		$('.tip').css('display','none')
 	})
 	
-	$('.delete').click(function(){
-		confirm('不买去求')
-		})
+	$('.login').click(function(){
+		window.open('http://localhost/FlyDog2/login.html')
+	})
+	
+	
 })
+

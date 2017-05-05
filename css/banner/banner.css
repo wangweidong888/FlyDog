@@ -67,10 +67,16 @@
 .replay{
 	width: 18px;
     height: 200px;
+    cursor: pointer;
     background: url(../../img/pic5/layout.png) -199px -565px no-repeat;
 }
 .close{
 	width: 18px;
     height: 247px;
+    cursor: pointer;
     background: url(../../img/pic5/layout.png) -179px -565px no-repeat;
+}
+.banner_list #banner0{
+	background: url(../../img/c51ca741f0e14837bce92560dd4fb7db.jpg) no-repeat center; 
+	display: block;
 }

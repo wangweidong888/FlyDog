@@ -1,0 +1,28 @@
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border-radius:50% ;
+	border: 1px solid gainsboro;
+	margin:-4px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+.cloud-zoom-gallery{
+	display: inline-block;
+}
+
